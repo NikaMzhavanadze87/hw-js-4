@@ -26,11 +26,13 @@ function getRendomNum(min, max) {
   console.log(rendomgenerator);
 
   //#5------------
-  
-  function getCurrencySymbolFromCode(amount=0,currency){
+  let amount = 0;
+  function getCurrencySymbolFromCode(currency){
     const userLanguage = window.navigator.language;
     return new Intl.NumberFormat(userLanguage,{
         style: "currency",
         currency: currency,
     }).format(amount);
  }
+ let symbol = getCurrencySymbolFromCode("EUR")
+ console.log(symbol);
