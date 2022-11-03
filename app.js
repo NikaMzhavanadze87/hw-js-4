@@ -36,3 +36,30 @@ function getRendomNum(min, max) {
  }
  let symbol = getCurrencySymbolFromCode("EUR")
  console.log(symbol);
+ 
+ //#6--------------
+ const person = [
+    {
+        name: "nika",
+        age: 35,
+    },
+    {
+        name: "nuka",
+        age: 25,
+    },
+    {
+        name:"zura",
+        age: 34,
+    },
+    {
+        name: "tea",
+        age: 20,
+    },
+    {
+        name: "levani",
+        age: 45,
+    },
+];
+let min = Math.min(...person.map(person => person.age));
+let minValues = person.filter(person => person.age == min);
+console.log(minValues);
